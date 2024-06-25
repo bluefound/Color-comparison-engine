@@ -2,7 +2,7 @@ function getComplementaryColors() {
     const colorPicker = document.getElementById('colorPicker');
     const color = colorPicker.value.slice(1); // Remove the '#' from the color value
 
-    fetch(`https://www.thecolorapi.com/scheme?hex=${color}&mode=complement&count=1`)
+    fetch(``)
         .then(response => response.json())
         .then(data => {
             displayColors(data.colors);
